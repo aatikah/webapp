@@ -14,7 +14,7 @@ pipeline{
         stage('Build'){
             steps{
              
-                sh 'sudo ./build.sh'
+                sh '/var/lib/jenkins/workspace/tomcat-pipeline/build.sh'
             }
         }
     }
