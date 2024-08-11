@@ -1,7 +1,11 @@
 pipeline{
     agent any 
+    environment {
+        PATH = "/usr/lib/jvm/java-17-openjdk-amd64/bin:/path/to/maven/bin:$PATH"
+    }
     tools{
         maven 'Maven 3.8.7'
+        
     }
     stages{
         stage('Initialize'){
